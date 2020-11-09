@@ -11,3 +11,40 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* custom style */
+.task-wrapper {
+  padding: 20px 0;
+}
+.pull-right {
+  margin-left: auto;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+}
+.react-datepicker-wrapper {
+  display: block!important;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.mr-4 {
+  margin-right: 16px;
+}
+.media-style {
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 7px -2px #ccc;
+  padding: 8px;
+  align-items: center!important;
+  border-radius: 4px;
+}
+.task-action {
+  display: flex;
+  align-self: start;
+  padding: 0 10px;
+}
+.task-date {
+  color: rgb(207, 17, 17);
+}

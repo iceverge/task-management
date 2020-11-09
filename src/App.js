@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import DefaultNavbar from './components/layout/default-navbar';
+import DefaultContainer from './components/layout/default-container';
+import Task from "./pages/Task";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Fragment>
+        <DefaultNavbar />
+        <DefaultContainer>
+          <Switch>
+            <Route path="/" exact component={Task} />
+          </Switch>
+        </DefaultContainer>
+      </Fragment>
+    </BrowserRouter>
   );
 }
 
